@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
     return (
         <div className='main_container'>
-            <div>
+            <div className='main_explain'>
                 <h1>뉴스 기반 주식 종목 추천</h1>
                 <span className="explain">
                     사람은 만나본 적 없는 사람과 처음 들어보는 기업도 이름만으로 구분할 수 있습니다.<br/>
