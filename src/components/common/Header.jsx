@@ -5,8 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import {Avatar, Badge, Box, IconButton, Stack, Tooltip,} from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { usePopover } from '../../hooks/use-popover';
-import profile from '../../assets/avatar-seo-hyeon-ji.png'
-import login from '../../assets/login.png'
+import profile from '../../assets/images/avatar-seo-hyeon-ji.png'
+import login from '../../assets/images/login.png'
 import {AccountPopover} from "./AccountPopover";
 
 const SIDE_NAV_WIDTH = 280;

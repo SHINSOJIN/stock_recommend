@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import example from '../assets/images/result_example.jpg'
 
 const Main = () => {
     return (
@@ -14,6 +16,21 @@ const Main = () => {
                 </span>
             </div>
 
+            <div className='sub_explain'>
+                <h1>정확한 종목 추출을 위한 KoGPT2 모델</h1>
+                <div>
+                    <img src={example} alt='example_img'/>
+                    <span className="explain">
+                    한국어와 호환성 향상을 위해 GPT 모델을 fine-tuning한 KoGPT2 모델을 사용했습니다.<br/>
+                    이 모델은 단순히 가장 많이 등장한 키워드를 종목명으로 선택하지 않습니다.<br/>
+                    대신, KoGPT2 모델은 입력된 텍스트의 문맥을 고려하여 종목을 선별하고 생성합니다.<br/>
+                    <br/>
+                        모델 자체가 텍스트의 내용과 관련하여 가장 적합한 종목을 찾아냅니다.<br/>
+                    KoGPT2는 자연어 처리와 문맥 이해에 강점을 가지고 있습니다.<br/>
+                </span>
+                </div>
+            </div>
+
             <div className="strengthContainer">
                 <div style={{backgroundColor: '#f7f9fb'}}>
                     <div className="strength" >
@@ -21,26 +38,30 @@ const Main = () => {
                             <p>기술 강점 1.</p>
                             <p>기존의 뉴스 종목 배정<br/> 문제점 개선</p>
                             <span className="explain">
-                                기존 포털사이트는 뉴스를 관련한 종목에 배정하는 기준으로<br/>
+                                기존 포털사이트는 뉴스를 관련 종목에 배정하기 위해<br/>
                                 ‘티커’를 사용합니다.<br/>
-                                이는 텍스트 기반의 분류로 많은 오류를 유저에게 범합니다.<br/>
-                                뉴스 본문 내 등장한 종목명을 통한 배정으로 타종목에 뉴스가 배정되거나,<br/>
-                                비상장사에 관련된 뉴스는 찾기 어렵습니다.<br/>
+                                이는 텍스트 기반의 분류 기준으로 <br/>
+                                뉴스에 언급한 종목명을 타종목에 배정하거나,<br/>
+                                비상장사에 관련된 종목은 배정하기 어렵습니다.
                             </span>
                         </div>
                         <div className="card">
                             <p>기술 강점 2.</p>
                             <p>동음이의어가 같이 검색되는<br/> 문제점 개선</p>
                             <span className="explain">
-                                기존 포털사이트는 유저가 검색한 키워드를 중심으로 결과가 노출되기 때문에<br/>
+                                기존 포털사이트는 검색 키워드를 중심으로 결과가 노출되기 때문에<br/>
                                 동음이의어가 같이 검색되는 불편함이 있습니다.<br/>
-                                특히, 종목명과 동일한 단어가 타 기사에 포함된 경우도 함께 검색되기 때문에<br/>
+                                종목명과 동일한 단어가 타 기사에 포함된 경우도 함께 검색되기 때문에<br/>
                                 유저는 관심있는 종목과 관련된 뉴스만 확인하는데<br/>
                                 많은 시간이 소요됩니다.<br/>
                             </span>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='btn_container'>
+                <button className='btn' ><Link to='/demo'>체험하러 가기</Link></button>
             </div>
         </div>
     );
