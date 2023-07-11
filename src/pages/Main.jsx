@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import example from '../assets/images/result_example.jpg'
+import search from '../assets/images/undraw_search_engines_ij7q.svg'
 
 const Main = () => {
     return (
@@ -14,12 +15,16 @@ const Main = () => {
                     기존의 검색엔진 기술과 일반 자연어 인공지능의 한계를 극복하였습니다.<br/>
                     실제로 사용할만한 뉴스 서비스를 제공하기 위해서는 뉴스가 무엇에 관한 것인지를 정확히 알수 있는 기술이 필요합니다.<br/>
                 </span>
+
+                <div className='btn_container'>
+                    <button className='btn' ><Link to='/demo'>체험하러 가기</Link></button>
+                </div>
             </div>
 
             <div className='sub_explain'>
-                <h1>정확한 종목 추출을 위한 KoGPT2 모델</h1>
+                <img src={search} alt='search_img'/>
                 <div>
-                    <img src={example} alt='example_img'/>
+                    <h1>정확한 종목 추출을 위한 KoGPT2 모델</h1>
                     <span className="explain">
                     한국어와 호환성 향상을 위해 GPT 모델을 fine-tuning한 KoGPT2 모델을 사용했습니다.<br/>
                     이 모델은 단순히 가장 많이 등장한 키워드를 종목명으로 선택하지 않습니다.<br/>
@@ -60,9 +65,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className='btn_container'>
-                <button className='btn' ><Link to='/demo'>체험하러 가기</Link></button>
-            </div>
+
         </div>
     );
 };

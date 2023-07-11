@@ -29,7 +29,7 @@ const Header = (props) => {
 
 
     return (
-        <div>
+        <div className='main_container'>
             <Box
                 component="header"
                 sx={{

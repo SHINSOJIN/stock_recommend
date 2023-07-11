@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Header from "./components/common/Header";
 import Main from "./pages/Main";
 import InsertNews from "./pages/InsertNews";
+import Footer from "./components/common/Footer";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path='/demo' element={<InsertNews/>}/>
                 <Route path='/login' element={<Login/>}/>
             </Routes>
+            <Footer/>
         </>
 
     );
