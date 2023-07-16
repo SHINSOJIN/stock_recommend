@@ -7,7 +7,7 @@ import { alpha } from '@mui/material/styles';
 import { usePopover } from '../../hooks/use-popover';
 import profile from '../../assets/images/avatar-seo-hyeon-ji.png'
 import login from '../../assets/images/login.png'
-import {AccountPopover} from "./AccountPopover";
+// import {AccountPopover} from "./AccountPopover";
 
 const SIDE_NAV_WIDTH = 280;
 const TOP_NAV_HEIGHT = 64;
@@ -69,11 +69,11 @@ const Header = (props) => {
                     </Stack>
                 </Stack>
             </Box>
-            <AccountPopover
-                anchorEl={accountPopover.anchorRef.current}
-                open={accountPopover.open}
-                onClose={accountPopover.handleClose}
-            />
+            {/*<AccountPopover*/}
+            {/*    anchorEl={accountPopover.anchorRef.current}*/}
+            {/*    open={accountPopover.open}*/}
+            {/*    onClose={accountPopover.handleClose}*/}
+            {/*/>*/}
         </div>
     );
 };

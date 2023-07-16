@@ -5,6 +5,7 @@ body {-ms-overflow-style:none;  }
 body::-webkit-scrollbar { display:none; }
 
 .main_container{margin: 16px auto;}
+.inner_container{max-width: 1580px; margin: 0 auto;}
 .explain {display:inline-block; font-weight: normal; line-height: 1.78; letter-spacing: -0.45px;white-space: pre-wrap;}
 
 .main_explain{padding: 0 150px 90px 150px; background-image: linear-gradient(106deg, #1b5fce 1%, #5812b3);}

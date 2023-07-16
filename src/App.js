@@ -12,6 +12,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path='/' element={<Main/>}/>
+                <Route path='/demo2' element={<div>뉴스 입력 페이지</div>}/>
                 <Route path='/demo' element={<InsertNews/>}/>
                 <Route path='/login' element={<Login/>}/>
             </Routes>
